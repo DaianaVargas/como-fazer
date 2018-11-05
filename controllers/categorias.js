@@ -11,6 +11,12 @@ const nova = async (req, res) => {
     res.redirect('/categorias')
 }
 
+const listHome = (req, res) => {
+    // console.log('teste')
+    res.render('home/index')
+    // res.render('categorias/index', { 'teste': 'teste' })
+}
+
 const list = async (req, res) => {
     const categorias = await api.list('categorias')
     res.render('categorias/index', { categorias })
@@ -35,5 +41,5 @@ const editar = async (req, res) => {
 }
 
 module.exports = {
-    novaForm, nova, list, apagar, editarForm, editar
+    novaForm, nova, list, apagar, editarForm, editar, listHome
 }

@@ -6,6 +6,7 @@ const bodyParser = require('body-parser')
 
 const categorias = require('./routes/categorias')
 const publicacoes = require('./routes/publicacoes')
+const home = require('./routes/home')
 
 app.set('view engine', 'ejs') // ejs: HTML turbinado, mas ainda é HTML; jade: deixa de ser HTML
 app.use(bodyParser.urlencoded())
@@ -104,7 +105,7 @@ app.get('/', async(request, response) => {
 
 app.use('/categorias', categorias)
 app.use('/publicacoes', publicacoes)
-
+app.use('/home', home)
 
 
 // ouvir uma porta de entrada
