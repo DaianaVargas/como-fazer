@@ -13,11 +13,16 @@
 
 <%- include('../header') %>
 
-<a class="btn btn-light" style="margin-top:10px" href="/categorias/nova">Nova categoria</a>  
-<a class="btn btn-light" style="margin-top:10px" href="/publicacoes/nova">Nova publicação</a> 
-<br/> <br/>
-<!-- <table class="table table-hover table-dark"> -->
-<table class="table table-striped table-hover">
+<div class="container">
+  <div class="alert alert-primary" role="alert">
+    Categorias
+  </div>
+  <!-- Content here -->
+  <a class="btn btn-light" style="margin-top:10px" href="/categorias/nova">Nova categoria</a>  
+  <a class="btn btn-light" style="margin-top:10px" href="/publicacoes/nova">Nova publicação</a> 
+  <br/> <br/>
+  <!-- <table class="table table-hover table-dark"> -->
+  <table class="table table-striped table-hover">
     <thead>
       <tr>
         <th scope="col">Categoria</th>
@@ -40,5 +45,7 @@
       <% }) %>
     </tbody>
   </table>
+</div>
+
 
 <%- include('../footer') %>
