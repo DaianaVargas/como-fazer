@@ -4,7 +4,9 @@
   "description": "primeiro projeto",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "lint:check": "prettier --check .",
+    "lint:fix": "prettier --write ."
   },
   "author": "Daiana Vargas",
   "license": "MIT",
@@ -13,5 +15,8 @@
     "body-parser": "^1.18.3",
     "ejs": "^3.1.9",
     "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5"
   }
 }
